@@ -16,21 +16,21 @@
     <style id="expo-reset">
       html,
       body {
-        height: 100%;
+        min-height: 100%;
         margin: 0;
         padding: 0;
         background: #000;
       }
 
       body {
-        overflow: hidden;
-        min-height: 100vh;
-        min-height: -webkit-fill-available;
+        overflow-y: auto;
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
       }
 
       #root {
         display: flex;
-        height: 100%;
+        min-height: 100vh;
         flex: 1;
         background: #000;
       }
